@@ -131,6 +131,45 @@
 			height: 200px;
 			width: 200px;
 		}
+        #ourh1{
+            text-transform: uppercase;
+        }
+        .maindiv{
+            background-color: blueviolet;
+        }
+        .product{
+            border: 2px solid red;
+            box-shadow: 2px 2px 5px 0px grey;
+            padding: 10px;
+            margin: 10px;
+        }
+        .product img{
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            text-align: center;
+            margin-left: 60px;
+        }
+        .changeproduct{
+            border: 10px solid red;
+            box-shadow: 2px 6px 5px 0px black;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .changeproduct img{
+            width: 300px;
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .changeproduct h1{
+            color: brown;
+        }
+
     </style>
 </head>
 <body>
@@ -139,23 +178,22 @@
 			<h1 id="web_name">WebSite Name</h1>
 		</div>
         <div class="menu">
-			<ul>
-				<li>Home</li>
-				<li>Blog</li>
-				<li>Add Blog</li>
-			</ul>
+			<button id="btn" onclick="nextDesign()" >Change Design</button>
+            <br>
+            <button id="btn" onclick="previousDesign()" >Pervious Design</button>
 		</div>
         <div class="content">
             <div class="main-content">
+                
+               <div id="product" class="product">
+                   <h1>Mobile Application Development</h1>
+                   <img src="https://1z1euk35x7oy36s8we4dr6lo-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/zymr8_steps_the_mobile_app_dev_lifecycle_cover.jpg" alt="">
+                   <h3>20000 Tk</h3>
+               </div>
 
-                <div id="author_layout" class="author">
-					<h1 id="authorh1">Hello Bangladesh</h1>
-					<img src="https://avatars.githubusercontent.com/u/41743928?v=4" alt="">
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quae.</p>
-				</div>
+               
 
-				<button onclick="showOrginal()">Orginal Mood</button>
-				<button onclick="showCustom()">CustomMood</button>
+               
 
 
             		<!-- <div class="each-product">
@@ -179,6 +217,6 @@
 			<h3>Custom Footer Made for practice</h3>
 		</div>
     </div>
-	<script src="script.js"></script>
+    <script src="dom.js"></script>
 </body>
 </html>
